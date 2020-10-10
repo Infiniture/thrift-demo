@@ -4,7 +4,7 @@ import org.apache.thrift.TException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.infiniture.thrift.demo.user.UserService;
+import com.infiniture.thrift.demo.proto.user.UserService;
 
 public class UserServiceImpl implements UserService.Iface {
 

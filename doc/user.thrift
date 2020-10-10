@@ -1,4 +1,4 @@
-namespace java com.infiniture.thrift.demo.user
+namespace java com.infiniture.thrift.demo.proto.user
 
 service UserService {
     string getName(1:i32 id)
