@@ -24,7 +24,7 @@ public class Client {
             UserService.Client client = new UserService.Client(protocol);
             transport.open();
             System.out.println(client.getName(1));
-            System.out.println(client.isExist("hhhh"));
+            System.out.println(client.isExist("infiniture"));
         } catch (TTransportException e) {
             e.printStackTrace();
         } catch (TException e) {
@@ -38,6 +38,6 @@ public class Client {
 
     public static void main(String[] args) {
         Client client = new Client();
-        client.startClient("itachi");
+        client.startClient("infiniture");
     }
 }
