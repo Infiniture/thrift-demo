@@ -1,15 +1,14 @@
-package com.infiniture.thriftserver.controller;
+package com.infiniture.thrift.server.service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.thrift.TException;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 
 import com.infiniture.thrift.api.proto.RPCDateService;
 
-
-@Controller
+@Service
 public class RPCDateServiceImpl implements RPCDateService.Iface {
 
     @Override

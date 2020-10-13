@@ -1,10 +1,10 @@
-package com.infiniture.thriftserver;
+package com.infiniture.thrift.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-import com.infiniture.thriftserver.server.RPCThriftServer;
+import com.infiniture.thrift.server.server.RPCThriftServer;
 
 @SpringBootApplication
 public class ThriftServerApplication {

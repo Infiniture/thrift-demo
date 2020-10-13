@@ -1,4 +1,4 @@
-package com.infiniture.thriftserver.server;
+package com.infiniture.thrift.server.server;
 
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.server.TServer;
@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.infiniture.thrift.api.proto.RPCDateService;
-import com.infiniture.thriftserver.controller.RPCDateServiceImpl;
+import com.infiniture.thrift.server.service.RPCDateServiceImpl;
 
 @Component
 public class RPCThriftServer {
@@ -28,11 +28,11 @@ public class RPCThriftServer {
     @Value("${thrift.maxWorkerThreads}")
     private int maxThreads;
 
-    private TBinaryProtocol.Factory protocolFactory;
-    private TTransportFactory transportFactory;
-
     @Autowired
     private RPCDateServiceImpl rpcDateService;
+
+    private TBinaryProtocol.Factory protocolFactory;
+    private TTransportFactory transportFactory;
 
     public void init() {
         protocolFactory = new TBinaryProtocol.Factory();
