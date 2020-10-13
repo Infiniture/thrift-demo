@@ -1,13 +1,12 @@
-package com.infiniture.thrift.api;
+package com.infiniture.thrift.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ThriftApiApplication {
+public class ThriftClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ThriftApiApplication.class, args);
+		SpringApplication.run(ThriftClientApplication.class, args);
 	}
-
 }
